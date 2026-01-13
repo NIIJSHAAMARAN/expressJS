@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= storeName %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= storeName %></h1>
+    <% for (const book of books){ %>
+  
+      <h1>Title:<%= book.title %>  </h1>
+      <p>author:<%=book.author %></p>
+   <% } %>
+  </body>
+</html>
