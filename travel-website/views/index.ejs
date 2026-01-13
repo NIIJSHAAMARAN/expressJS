@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   <% for (const place of places){ %>
+      
+      <p>Name:<%= place.name %>  </p>
+      <p>Country:<%=place.country %></p>
+      <% if(place.isPopular){%>
+        <p><b>Popular Destination</b></p>
+        <% } %>
+        <br>
+   <% } %>
+   <script type="text/javascript">
+    alert("<%= greet%>")
+   </script>
+  </body>
+</html>
